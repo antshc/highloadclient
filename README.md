@@ -1,4 +1,4 @@
-## ChatGPT 4 Prompt
+## ChatGPT 4o Prompt
 
 ```text
 As a .NET developer, implement a CompanyClient class to handle HTTP requests in a high-load system, meeting the following requirements:
