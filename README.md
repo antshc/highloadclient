@@ -33,10 +33,10 @@ Generate a complete, buildable C# .NET 8 code file implementing the following:
   Implement the following test methods:
   - GetCompanyDataAsync_ReturnsData_WhenExternalServiceIsAvailable
   - GetCompanyDataAsync_ReturnsCachedData_WhenCircuitBreakerIsOpen
-4 Ensure the code compiles without error under .NET 8.
-6 Export Format  
+4. Ensure the code compiles without error under .NET 8.
+5. Export Format  
   Output all C# code in one continuous copy-paste block.
 he build.
-6 Best Practices Commentary  
+6. Best Practices Commentary  
   Add inline comments explaining how optimization and reliability patterns—such as HttpClientFactory, distributed caching, circuit breaker, and bulkhead isolation—affect performance and resiliency, cache Invalidation.
 ```
