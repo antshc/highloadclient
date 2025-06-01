@@ -1,9 +1,8 @@
 ## ChatGPT 4o Prompt
 
 
-# User Story
 
-## Promt for user story
+# Prompt for user story
 ```
 Write a user story with acceptance criteria for the following task:
 
@@ -19,13 +18,13 @@ Requirements:
 - Ensure all criteria are testable from a functional standpoint.
 ```
 
+# User Story
+
 ## **Title:** Display Real-Time Banana Availability from External Warehouse
 
 **As a** customer browsing the catalog page of our e-commerce website,  
 **I want** to see real-time availability of bananas from the Banana Warehouse system,  
 **So that** I can make informed purchasing decisions based on up-to-date inventory.
-
----
 
 ## Acceptance Criteria (Rule-Oriented Format – Functional Only)
 
@@ -40,6 +39,53 @@ Requirements:
 - If the Banana Warehouse system returns an error for one or more bananas, the catalog must still render the page and show “Availability Unknown” for the affected items only.
 - When a banana is no longer listed in the Banana Warehouse system, the availability status must not be shown for that item on the catalog page.
 
+
+
+# Set user story in the chat context
+```
+I’m working on a feature with the following user story:
+# User Story
+
+## Title: Display Real-Time Banana Availability from External Warehouse
+
+**As a** [add text] 
+**I want** [add text],  
+**So that** [add text].
+
+## Acceptance Criteria (Rule-Oriented Format – Functional Only)
+- [add text]
+Save the user story to the chat context and use it as context when mentioning the phrase "Use the banana catalog user story context.".
+
+
+```
+
+# Ask about best practices how to get content from frontend to backend
+```
+Use the banana catalog user story context. 
+Explain the best practices for fetching data from the asp.net core backend to the server-side rendered frontend, frontend uses ReactJs to load content asynchronously. Ensure low latency and high availability.
+
+Use the banana catalog user story context. 
+Generate functional test cases from the acceptance criteria in the banana catalog user story. Format them as Given/When/Then style, covering all scenarios: available, unavailable, unknown, partial errors, pagination, and missing banana SKUs.
+
+Based on the banana catalog user story context, list potential edge cases we should clarify with the product owner—especially around data consistency, pagination boundaries, and error handling for partial responses from the Banana Warehouse system.
+
+Using the banana catalog user story context, outline a recommended backend architecture for querying the Banana Warehouse system during server-side rendering. Include caching options, failure isolation strategies, and fallback behavior in case of partial or failed data fetches.
+
+Prompt: REST API Design Based on User Story
+
+Using the banana catalog user story context, design the REST API endpoints needed to retrieve real-time banana availability from the external Banana Warehouse system.  
+
+Include:
+- Endpoint URL structure and HTTP methods  
+- Request parameters (e.g., SKU list, pagination details)  
+- Response schema (with all possible availability statuses: In Stock, Out of Stock, Availability Unknown)  
+- How to handle errors gracefully in the API response  
+- Guidelines for batching requests for 100+ bananas per page  
+
+The goal is to enable the catalog frontend to fetch real-time availability efficiently during server-side rendering, without blocking page load.
+
+
+```
 
 ```text
 As an experienced .NET developer working on a high-load microservices architecture using ASP.NET Core and .NET 8, you are tasked with integrating the Product Catalog microservice with an external Inventory System via HTTP to retrieve product availability based on SKU codes.
