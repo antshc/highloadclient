@@ -1,5 +1,46 @@
 ## ChatGPT 4o Prompt
 
+
+## User Story
+
+# Propmt for user story
+```
+Write a user story with acceptance criteria for the following task:
+
+Task: 
+We’re launching a new real-time inventory integration with our external Banana Warehouse system. 
+We need to show availability for 100+ bananas per page, server-side rendered. 
+Also, make it fast. And reliable.
+
+Requirements:
+- Use the Rule-Oriented Format for acceptance criteria: one bullet point per rule.
+- Acceptance criteria must include only functional requirements—focus on behaviors, outputs, and system responses to user or system actions.
+- Exclude all non-functional requirements (e.g., response time limits, system uptime, latency, scalability, performance thresholds).
+- Ensure all criteria are testable from a functional standpoint.
+```
+
+**Title:** Display Real-Time Banana Availability from External Warehouse
+
+**As a** customer browsing the catalog page of our e-commerce website,  
+**I want** to see real-time availability of bananas from the Banana Warehouse system,  
+**So that** I can make informed purchasing decisions based on up-to-date inventory.
+
+---
+
+## Acceptance Criteria (Rule-Oriented Format – Functional Only)
+
+- The system must display the availability status for each banana product retrieved from the Banana Warehouse system.
+- For each catalog page load, the system must query availability data for all bananas visible on that page (minimum of 100 items).
+- If a banana is available in the Banana Warehouse system, the catalog must display the label “In Stock”.
+- If a banana is not available in the Banana Warehouse system, the catalog must display the label “Out of Stock”.
+- If the Banana Warehouse system returns an unknown or missing availability status for a banana, the catalog must display the label “Availability Unknown”.
+- The system must not block or prevent the rendering of the catalog page if the availability data from the Banana Warehouse system is delayed or unavailable.
+- The system must allow users to navigate between paginated catalog views, each showing the correct availability status for all listed bananas.
+- If a user reloads the catalog page, the system must re-fetch availability data for the bananas on that page from the Banana Warehouse system.
+- If the Banana Warehouse system returns an error for one or more bananas, the catalog must still render the page and show “Availability Unknown” for the affected items only.
+- When a banana is no longer listed in the Banana Warehouse system, the availability status must not be shown for that item on the catalog page.
+
+
 ```text
 As an experienced .NET developer working on a high-load microservices architecture using ASP.NET Core and .NET 8, you are tasked with integrating the Product Catalog microservice with an external Inventory System via HTTP to retrieve product availability based on SKU codes.
 
