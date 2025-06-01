@@ -127,9 +127,10 @@ Generate a complete, buildable C# .NET 8 code file implementing the following:
   - GetInventoryDataAsync_ReturnsData_WhenExternalServiceIsAvailable
   - GetInventoryDataAsync_ReturnsCachedData_WhenCircuitBreakerIsOpen
 4. Ensure the code compiles without error under .NET 8.
-5. Export Format  
+5. Ensure test cases pass.
+6. Export Format  
   Output all C# code in one continuous copy-paste block.
 he build.
-6. Best Practices Commentary  
+7. Best Practices Commentary  
   Add inline comments explaining how optimization and reliability patterns—such as HttpClientFactory, distributed caching, circuit breaker, and bulkhead isolation—affect performance and resiliency, cache Invalidation.
 ```
