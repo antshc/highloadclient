@@ -1,6 +1,12 @@
 ## ChatGPT 4o Prompt
 
 ```text
+As an experienced .NET developer working on a high-load microservices architecture using ASP.NET Core and .NET 8, you are tasked with integrating the Product Catalog microservice with an external Inventory System via HTTP to retrieve product availability based on SKU codes.
+
+Describe the best practices for implementing a robust, high-performance HTTP client for communication with such external services. Include recommended resilience patterns such as Retry, Circuit Breaker, and Bulkhead Isolation. For each pattern, explain when it should be applied and why it is beneficial in high-load scenarios. Additionally, outline any other important considerations—such as timeouts, caching, connection reuse, and health checks—to ensure high availability, fault tolerance, and efficient resource usage in production-grade environments.
+```
+
+```text
 As a .NET developer, implement a CompanyClient class to handle HTTP requests in a high-load system, meeting the following requirements:
 
 Requirements:
