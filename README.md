@@ -1,9 +1,9 @@
 ## ChatGPT 4o Prompt
 
 
-## User Story
+# User Story
 
-# Propmt for user story
+## Promt for user story
 ```
 Write a user story with acceptance criteria for the following task:
 
@@ -19,7 +19,7 @@ Requirements:
 - Ensure all criteria are testable from a functional standpoint.
 ```
 
-**Title:** Display Real-Time Banana Availability from External Warehouse
+## **Title:** Display Real-Time Banana Availability from External Warehouse
 
 **As a** customer browsing the catalog page of our e-commerce website,  
 **I want** to see real-time availability of bananas from the Banana Warehouse system,  
