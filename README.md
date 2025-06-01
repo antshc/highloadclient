@@ -94,7 +94,7 @@ Describe the best practices for implementing a robust, high-performance HTTP cli
 ```
 
 ```text
-As a .NET developer, implement a CompanyClient class to handle HTTP requests in a high-load system, meeting the following requirements:
+As a .NET developer, implement a InventoryClient class to handle HTTP requests in a high-load system, meeting the following requirements:
 
 Requirements:
 1. HttpClientFactory Integration
@@ -120,12 +120,12 @@ Generate a complete, buildable C# .NET 8 code file implementing the following:
 2. Test Structure  
   Output a single .cs file that includes:
   1. An Xunit test class at the top.
-  2. The CompanyClient implementation class.
+  2. The InventoryClient implementation class.
   3. Supporting classes and utilities, if any.
 3. Test Cases  
   Implement the following test methods:
-  - GetCompanyDataAsync_ReturnsData_WhenExternalServiceIsAvailable
-  - GetCompanyDataAsync_ReturnsCachedData_WhenCircuitBreakerIsOpen
+  - GetInventoryDataAsync_ReturnsData_WhenExternalServiceIsAvailable
+  - GetInventoryDataAsync_ReturnsCachedData_WhenCircuitBreakerIsOpen
 4. Ensure the code compiles without error under .NET 8.
 5. Export Format  
   Output all C# code in one continuous copy-paste block.
