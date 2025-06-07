@@ -56,21 +56,37 @@ Save the user story to the chat context and use it as context when mentioning th
 ```
 
 # Brainstorm best practices prompt
-```
-Use the banana catalog user story context. 
-Explain the best practices for fetching data from the asp.net core backend to the server-side rendered frontend, frontend uses ReactJs to load content asynchronously. Ensure low latency and high availability.
-
-Use the banana catalog user story context. 
-Generate functional test cases from the acceptance criteria in the banana catalog user story. Format them as Given/When/Then style, covering all scenarios: available, unavailable, unknown, partial errors, pagination, and missing banana SKUs.
-
-Based on the banana catalog user story context, list potential edge cases we should clarify with the product owner—especially around data consistency, pagination boundaries, and error handling for partial responses from the Banana Warehouse system.
-
-Using the banana catalog user story context, outline a recommended backend architecture for querying the Banana Warehouse system during server-side rendering. Include caching options, failure isolation strategies, and fallback behavior in case of partial or failed data fetches.
-```
-
-# Brainstorm REST API endpoints design prompt
 ```text
-Using the banana catalog user story context, design the REST API endpoints needed to retrieve real-time banana availability from the external Banana Warehouse system.  
+Use the banana catalog user story context. 
+Explain the best practices for fetching data from the asp.net core backend 
+to the server-side rendered frontend, frontend uses ReactJs 
+to load content asynchronously. Ensure low latency and high availability.
+
+---
+
+Use the banana catalog user story context. 
+Generate functional test cases from the acceptance criteria in the banana catalog user story. 
+Format them as Given/When/Then style, covering all scenarios: 
+available, unavailable, unknown, partial errors, pagination, and missing banana SKUs.
+
+---
+
+Based on the banana catalog user story context, 
+list potential edge cases we should clarify with the product owner-especially 
+around data consistency, pagination boundaries, 
+and error handling for partial responses from the Banana Warehouse system.
+
+---
+
+Using the banana catalog user story context, outline a recommended backend architecture 
+for querying the Banana Warehouse system during server-side rendering. 
+Include caching options, failure isolation strategies, 
+and fallback behavior in case of partial or failed data fetches.
+
+---
+
+Using the banana catalog user story context, design the REST API endpoints needed 
+to retrieve real-time banana availability from the external Banana Warehouse system.  
 
 Include:
 - Endpoint URL structure and HTTP methods  
@@ -79,10 +95,12 @@ Include:
 - How to handle errors gracefully in the API response  
 - Guidelines for batching requests for 100+ bananas per page  
 
-The goal is to enable the catalog frontend to fetch real-time availability efficiently during server-side rendering, without blocking page load.
+The goal is to enable the catalog frontend to fetch real-time availability 
+efficiently during server-side rendering, without blocking page load.
 ```
 
-# Brainstorm best practices of HTTP clients, explain details prompt
+
+# Brainstorm best practices of HTTP clients, explain the details prompt
 ```text
 As an experienced .NET developer working on a high-load microservices architecture using ASP.NET Core and .NET 8, you are tasked with integrating the Product Catalog microservice with an external Inventory System via HTTP to retrieve product availability based on SKU codes.
 
