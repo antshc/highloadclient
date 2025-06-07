@@ -1,9 +1,6 @@
-## ChatGPT 4o Prompt
-
-
-
-# Prompt for user story
-```
+# Write a user story prompt
+## Prompt
+```text
 Write a user story with acceptance criteria for the following task:
 
 Task: 
@@ -18,15 +15,15 @@ Requirements:
 - Ensure all criteria are testable from a functional standpoint.
 ```
 
-# User Story
-
-## **Title:** Display Real-Time Banana Availability from External Warehouse
+## Result
+```text
+**Title:** Display Real-Time Banana Availability from External Warehouse
 
 **As a** customer browsing the catalog page of our e-commerce website,  
 **I want** to see real-time availability of bananas from the Banana Warehouse system,  
 **So that** I can make informed purchasing decisions based on up-to-date inventory.
 
-## Acceptance Criteria (Rule-Oriented Format – Functional Only)
+**Acceptance Criteria**
 
 - The system must display the availability status for each banana product retrieved from the Banana Warehouse system.
 - For each catalog page load, the system must query availability data for all bananas visible on that page (minimum of 100 items).
@@ -38,10 +35,10 @@ Requirements:
 - If a user reloads the catalog page, the system must re-fetch availability data for the bananas on that page from the Banana Warehouse system.
 - If the Banana Warehouse system returns an error for one or more bananas, the catalog must still render the page and show “Availability Unknown” for the affected items only.
 - When a banana is no longer listed in the Banana Warehouse system, the availability status must not be shown for that item on the catalog page.
+```
 
 
-
-# Set user story in the chat context
+# Set the user story in the chat context prompt
 ```
 I’m working on a feature with the following user story:
 # User Story
@@ -56,10 +53,9 @@ I’m working on a feature with the following user story:
 - [add text]
 Save the user story to the chat context and use it as context when mentioning the phrase "Use the banana catalog user story context.".
 
-
 ```
 
-# Ask about best practices how to get content from frontend to backend
+# Brainstorm best practices prompt
 ```
 Use the banana catalog user story context. 
 Explain the best practices for fetching data from the asp.net core backend to the server-side rendered frontend, frontend uses ReactJs to load content asynchronously. Ensure low latency and high availability.
@@ -70,9 +66,10 @@ Generate functional test cases from the acceptance criteria in the banana catalo
 Based on the banana catalog user story context, list potential edge cases we should clarify with the product owner—especially around data consistency, pagination boundaries, and error handling for partial responses from the Banana Warehouse system.
 
 Using the banana catalog user story context, outline a recommended backend architecture for querying the Banana Warehouse system during server-side rendering. Include caching options, failure isolation strategies, and fallback behavior in case of partial or failed data fetches.
+```
 
-Prompt: REST API Design Based on User Story
-
+# Brainstorm REST API endpoints design prompt
+```text
 Using the banana catalog user story context, design the REST API endpoints needed to retrieve real-time banana availability from the external Banana Warehouse system.  
 
 Include:
@@ -83,16 +80,16 @@ Include:
 - Guidelines for batching requests for 100+ bananas per page  
 
 The goal is to enable the catalog frontend to fetch real-time availability efficiently during server-side rendering, without blocking page load.
-
-
 ```
 
+# Brainstorm best practices of HTTP clients, explain details prompt
 ```text
 As an experienced .NET developer working on a high-load microservices architecture using ASP.NET Core and .NET 8, you are tasked with integrating the Product Catalog microservice with an external Inventory System via HTTP to retrieve product availability based on SKU codes.
 
 Describe the best practices for implementing a robust, high-performance HTTP client for communication with such external services. Include recommended resilience patterns such as Retry, Circuit Breaker, and Bulkhead Isolation. For each pattern, explain when it should be applied and why it is beneficial in high-load scenarios. Additionally, outline any other important considerations—such as timeouts, caching, connection reuse, and health checks—to ensure high availability, fault tolerance, and efficient resource usage in production-grade environments.
 ```
 
+# Write HTTP client using best practices prompt
 ```text
 As a .NET developer, implement a InventoryClient class to handle HTTP requests in a high-load system, meeting the following requirements:
 
