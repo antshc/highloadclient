@@ -102,9 +102,15 @@ efficiently during server-side rendering, without blocking page load.
 
 # Brainstorm best practices of HTTP clients, explain the details prompt
 ```text
-As an experienced .NET developer working on a high-load microservices architecture using ASP.NET Core and .NET 8, you are tasked with integrating the Product Catalog microservice with an external Inventory System via HTTP to retrieve product availability based on SKU codes.
+As an experienced .NET developer working on a high-load microservices architecture using ASP.NET Core and .NET 8,
+you are tasked with integrating the Product Catalog microservice with an external Inventory System via HTTP
+to retrieve product availability based on SKU codes.
 
-Describe the best practices for implementing a robust, high-performance HTTP client for communication with such external services. Include recommended resilience patterns such as Retry, Circuit Breaker, and Bulkhead Isolation. For each pattern, explain when it should be applied and why it is beneficial in high-load scenarios. Additionally, outline any other important considerations—such as timeouts, caching, connection reuse, and health checks—to ensure high availability, fault tolerance, and efficient resource usage in production-grade environments.
+Describe the best practices for implementing a robust, high-performance HTTP client for communication with such external services.
+Include recommended resilience patterns such as Retry, Circuit Breaker, and Bulkhead Isolation.
+For each pattern, explain when it should be applied and why it is beneficial in high-load scenarios.
+Additionally, outline any other important considerations—such as timeouts, caching, connection reuse,
+and health checks—to ensure high availability, fault tolerance, and efficient resource usage in production-grade environments.
 ```
 
 # Write HTTP client using best practices prompt
