@@ -38,7 +38,7 @@ Requirements:
 ```
 
 
-# Set the user story in the chat context prompt
+## Set the user story in the chat context prompt
 ```
 I’m working on a feature with the following user story:
 # User Story
